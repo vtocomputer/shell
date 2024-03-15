@@ -1,4 +1,5 @@
 #!/bin/bash
+# need run commond sudo apt-get install mysql-client
 
 user="username"
 password="password"
