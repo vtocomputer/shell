@@ -6,7 +6,7 @@ host="127.0.0.1"
 database="database"
 port="port"
 
-allowed_ips=$(mysql -u $user -p$password -h $host -D $database -e "SELECT ip FROM etx.t_plat_ip" | grep -v ip | uniq)
+allowed_ips=$(mysql -u $user -p$password -h $host -D $database -e "SELECT ip FROM databse.table_ip" | grep -v ip | uniq)
 
 ufwprotip=$(ufw status | grep $port | grep -v DENY | awk {'print $3'})
 
